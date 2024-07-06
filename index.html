@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="GU_Exchange_icon.ico" />
+    <title>GU Exchange</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 1)), url('bg.png') no-repeat center top;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .download-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+		
+		.download-button img {
+			margin-right: 1px;
+			width: 16px; /* Set the width to 16px */
+			height: 16px; /* Set the height to 16px */
+			filter: invert(100%) brightness(10000%);
+		}
+
+        h1, p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GU Exchange</h1>
+        <p>GU Exchange is a locally run marketplace app for trading Gods Unchained cards on the IMX marketplace.</p>
+		<p>The current version offers the following features:</p>
+		<ul>
+            <li>Buying, selling and transferring Gods Unchained cards and currencies on IMX</li>
+            <li>Completing decklists based on missing cards on your GU account.</li>
+            <li>Selling or transferring entire GU collections.</li>
+            <li>Trading with specific players by looking up their connected wallet address.</li>
+        </ul>
+        <a class="download-button" href="https://github.com/SaltBlocks/GU-Exchange/releases/download/v1.0.0/GU-Exchange_v1.0.0_x86.zip"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows Icon"> Win32</a>
+        <a class="download-button" href="https://github.com/SaltBlocks/GU-Exchange/releases/download/v1.0.0/GU-Exchange_v1.0.0_x64.zip"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows Icon"> x64</a>
+        <a class="download-button" href="https://github.com/SaltBlocks/GU-Exchange"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Icon"> View on GitHub</a>
+    </div>
+</body>
+</html>
