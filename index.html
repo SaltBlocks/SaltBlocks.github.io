@@ -1,78 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
 	<meta name="google-site-verification" content="UnJMO4uhAX_NFE-jwPgGz1P-xIX0njrxJRnjyHl90MY" />
-	<link rel="shortcut icon" type="image/x-icon" href="GU_Exchange_icon.ico" />
-    <title>GU Exchange</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 1)), url('bg.png') no-repeat center top;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+	<meta charset="utf-8">
+    <link rel="icon" href="./assets/images/salt.png" />
+		<title>SaltBlocks Portfolio</title>
+    <meta name="description" content="A portfolio website for SaltBlocks on GitHub.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        .container {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-        }
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
 
-        .download-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            display: inline-block;
-            margin: 10px 5px;
-            transition: background-color 0.3s;
-        }
-
-        .download-button:hover {
-            background-color: #0056b3;
-        }
-		
-		.download-button img {
-			margin-right: 1px;
-			width: 16px; /* Set the width to 16px */
-			height: 16px; /* Set the height to 16px */
-			filter: invert(100%) brightness(10000%);
-		}
-
-        h1, p {
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>GU Exchange</h1>
-        <p>GU Exchange is a locally run marketplace app for trading Gods Unchained cards on the IMX marketplace.</p>
-		<p>The current version offers the following features:</p>
-		<ul>
-            <li>Buying, selling and transferring Gods Unchained cards and currencies on IMX</li>
-            <li>Completing decklists based on missing cards on your GU account.</li>
-            <li>Selling or transferring entire GU collections.</li>
-            <li>Trading with specific players by looking up their connected wallet address.</li>
-        </ul>
-        <a class="download-button" href="https://github.com/SaltBlocks/GU-Exchange/releases/download/v1.0.0/GU-Exchange_v1.0.0_x86.zip"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows Icon"> Win32</a>
-        <a class="download-button" href="https://github.com/SaltBlocks/GU-Exchange/releases/download/v1.0.0/GU-Exchange_v1.0.0_x64.zip"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows Icon"> x64</a>
-        <a class="download-button" href="https://github.com/SaltBlocks/GU-Exchange"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Icon"> View on GitHub</a>
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">SaltBlocks on GitHub</span>
+        <a class="button" href="https://www.youtube.com/channel/UCJFqJQl-nra10MM50YwBiVA">
+          <span class="button-text">Youtube</span>
+        </a>
+      </a>
     </div>
-</body>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <img src="./assets/images/salt.png" class="portfolio-header-image">
+          </a>
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hey, I'm SaltBlocks.</span>
+              <div class="body-text">I sometimes do a little programming as a hobby. This page shows the projects I have built.</div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/GU Exchange.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">GU Exchange</div>
+              <div class="body-text project-card-text">A GUI application in C# for trading GU cards. Currently offers basic functinality</div>
+            </div>
+            <a class="button" href="https://github.com/SaltBlocks/GU-Exchange/releases">
+              <span class="button-text">Releases</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/code.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">IMXlib</div>
+              <div class="body-text project-card-text">C++ library for interacting with the IMX platform.</div>
+            </div>
+            <a class="button" href="https://github.com/SaltBlocks/IMXlib/releases">
+              <span class="button-text">Releases</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/geant4.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">G4 SKIN CALC</div>
+              <div class="body-text project-card-text">My first attempt at making a dose calculator for skin exposure after extravasation of radiolabeled pharmaceuticals. Currently just approximates using a sphere.</div>
+            </div>
+            <a class="button" href="https://github.com/SaltBlocks/G4_SKIN_CALC/releases">
+              <span class="button-text">Releases</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.reddit.com/user/_SaltimusPrime_/">
+        <image src="./assets/icons/reddit.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="hhttps://www.youtube.com/@saltblocks4372">
+        <image src="./assets/icons/youtube.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
 </html>
